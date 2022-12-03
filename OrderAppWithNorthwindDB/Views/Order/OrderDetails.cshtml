@@ -1,0 +1,46 @@
+﻿@model List<OrderAppWithNorthwindDB.Models.OrderDetail>
+
+@{
+    ViewData["Title"] = "Order Detail";
+}
+<h3>@ViewData["Title"]</h3>
+<hr />
+<form>
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr class="table-active">
+                <th>Product Name</th>
+                <th>Quentity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model!=null && Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Product.ProductName</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.UnitPrice</td>
+                    </tr>
+                    
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5">
+                        <div>
+                            No Orders!
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</form>
+<div>
+    <a asp-action="Index" asp-controller="Order">Back to List</a>
+</div>

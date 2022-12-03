@@ -1,0 +1,41 @@
+﻿@model OrderAppWithNorthwindDB.Models.Shipper
+
+@{
+    ViewData["Title"] = "Create Shipper";
+}
+<h3>@ViewData["Title"]</h3>
+<hr />
+
+<form asp-action="Index">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group row">
+        <label asp-for="CompanyName" class="col-4 col-form-label">Company Name</label>
+        <div class="col-8">
+            <input asp-for="CompanyName" class="form-control" />
+        </div>
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group row">
+        <label asp-for="Phone" class="col-4 col-form-label">Phone</label>
+        <div class="col-8">
+            <input asp-for="Phone" class="form-control" />
+
+        </div>
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+    <hr />
+    <div class="text-center">
+        <input type="submit" value="Create" class="btn btn-primary btn-lg btn-block" />
+
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.message))
+    {
+
+        <div class="text-danger">@ViewBag.message</div>
+    }
+</form>
+<div>
+    <a asp-action="Index" asp-controller="Order">Back to List</a>
+</div>
