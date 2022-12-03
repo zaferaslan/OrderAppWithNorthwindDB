@@ -1,3 +1,3 @@
 # OrderAppWithNorthwindDB
 ## Orders
-![Img](/wwwroot/img/Orders.jpg)
+![Orders](/img/Orders.jpg)
