@@ -1,5 +1,5 @@
 # OrderAppWithNorthwindDB
-**Northwind** veritabanı kullanılarak geliştirilen **ASP.NET Core MVC** uygulamasıdır. Uygulamada olan ekranlar şu şekildedir:
+- **Northwind** veritabanı kullanılarak geliştirilen **ASP.NET Core MVC** uygulamasıdır. Uygulamada olan ekranlar şu şekildedir:
 ## Orders
 ![Orders](https://user-images.githubusercontent.com/78678129/205464759-dcdba694-6dad-49e1-a411-2dd0e173f10d.jpg)
 - Uygulama açıldığında siparişlerin listelendiği sayfa açılır. Sipariş nosu, sipariş tarihi, siparişi veren müşterinin adı soyadı, siparişle ilgilenen çalışanın adı soyadı ve siparişin toplamı yer alır.
@@ -10,4 +10,4 @@
 
 ## Create Shipper
 ![Create_Shipper](https://user-images.githubusercontent.com/78678129/205464808-abe1b231-b44a-4c72-afdb-e325a7ca59fb.jpg)
-- Shipper ekleme sayfası mevcut. Gerekli bilgileri girildikten sonra yeni kayıt eklenir.
+- Shipper ekleme sayfası mevcut. Gerekli bilgiler girildikten sonra yeni kayıt eklenir.
